@@ -1,0 +1,135 @@
+body, .top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(0deg, rgba(11, 39, 141, 0.829) 0%, rgb(78, 116, 212) 19%, rgb(116, 222, 255) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  transition: 0.3s all;
+  user-select: none;
+}
+
+:root {
+  --text: #8d602ce5;
+}
+/* --text: #04395e; */
+
+.App {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 3px 25px #000000;
+  background: white;
+  overflow: hidden;
+}
+
+.top {
+  background: var(--text);
+  color: #ffffff;
+  padding: 10px;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task-input {
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: var(--text);
+  display: flex;
+  padding: 5px;
+}
+
+.task-input * {
+  border-radius: 5px;
+}
+
+.task-input input {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  outline:none;
+}
+
+.task-input button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
+  outline:none;
+}
+
+.task-input button:hover{
+  background: #72512c;
+}
+
+.task-input button:active{
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+  background: #e7a458;
+}
+
+.task {
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.task:hover {
+  background-color: #04395e3d;
+}
+
+.task p {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.task-done {
+  background-color: #00000027;
+}
+
+.task-done > p:nth-of-type(1) {
+  color: #00000050;
+}
+
+.action-btn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 2px 3px;
+}
+
+.action-btn:hover {
+  background-color: #04395e3d;
+  border-radius: 5px;
+}
+
+.green_check{color: rgb(20, 151, 20);}
+.red_check{color: red;}
